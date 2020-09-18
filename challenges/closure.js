@@ -28,10 +28,9 @@ myFunction();
 
 
 
-function summation(num) {
-  for (let i = 0; i = num; i++){
-    return ++num;
-  }
+function summation(num1){
+  for (let i=0;i < num1; i++);
+  return num1 + i;
 };
-
 console.log(summation(4));
+
