@@ -20,15 +20,18 @@ myFunction();
 
 // Explanation: 
 
-  // nestedFunction can access the variable internal because that nestedFunction is in the other function's scope (myFunction). It is inbetween the curly braces, so nestedFunction is in the scope of myFunction, even though internal is above it.
+  // nestedFunction can access the variable internal because that nestedFunction is in the other function's scope (myFunction)or block scope. It is inbetween the curly braces, so nestedFunction is in the scope of myFunction, even though internal is above it.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function summation(params) {
-  
-}
 
+
+function summation(num) {
+  for (let i = 0; i = num; i++){
+    return ++num;
+  }
+};
 
 console.log(summation(4));

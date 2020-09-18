@@ -27,13 +27,31 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    forEach==>
+    It is a HOF;Must iterate thru every item in array without stopping;Does not return a new array;The return is optional;If data set is too large it will slow down your browser.
+
+    map==>
+    Returns a new array; Does not manipulate original array;Used for converting data;Needs a return.
+
 2. Explain the difference between a callback and a higher order function.
+
+    Callbacks==> A function passed into a HOF as an args to be executed later on.
+    HOF==> Recieve callbacks, takes other functions as args or return functions as their results.
 
 3. What is closure?
 
+    The combonation of a function enclosed with references to its lexical environment. It gives you access to an outer functions scope from an inner function.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window Binding==> If we don't give 'this' context it binds to the window/console. If no other rules apply it binds to the window.We don't do this on purpose, we need to fix this.
+Implicit Binding==> Most common rule, only applies to objects with methods, when the function is invoked, look to the left of the dot, that is 'this' refers to.
+Explicit Binding==> When we explicitly tell what 'this' refers to by using .call(immediatly invokes function, pass args 1 by 1), .apply(immediatly invokes function, pass args as an array), .bind(pass args 1 by 1, returns a new function that can be invoked later on).
+New Binding==> When a function is invoked as a constructor function using the new keyword 'this' points to the new object that is created.
+
 5. Why do we need super() in an extended class?
+
+    Super will take over with the constructor method. Nee it to access the parent objects.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
